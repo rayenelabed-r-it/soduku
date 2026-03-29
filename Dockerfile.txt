@@ -1,0 +1,13 @@
+# Dockerfile
+
+# Use Python 3.11 as the base image
+FROM python:3.11
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Copy the source files to the container
+COPY . /app
+
+# Set the entry point for the sudoku solver application
+ENTRYPOINT ["python", "sudoku_solver.py"]
